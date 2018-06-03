@@ -1,0 +1,50 @@
+﻿<Window x:Class="Padaria.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sistema de Padaria Cremosa" Height="720" Width="1280">
+    <Grid>
+        <!--labels-->
+        <Label x:Name="labelComanda" Content="Nº da Comanda:" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="0,0,1000,400"/>
+        <Label x:Name="valueComanda" Content="Comanda" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="0,0,680,400"/>
+        <Label x:Name="labelData" Content="Data de Hoje:" HorizontalAlignment="Center"  VerticalAlignment="Center" FontSize="24" Margin="680,0,0,400"/>
+        <Label x:Name="valueData" Content="31/12/2000" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Margin="1000,0,0,400"/>
+        <!--menu-->
+        <Menu x:Name="Menu" VerticalAlignment="Top" FontSize="20">
+            <MenuItem Header="_Menu">
+                <MenuItem Header="_Ver Comandas" Click="menuVerComandasClick"/>
+                <Separator />
+                <MenuItem Header="_Sair" Click="menuSairClick" />
+            </MenuItem>
+            <MenuItem Header="_Informações">
+                <MenuItem Header="_Ajuda" Click="menuAjudaClick" />
+                <MenuItem Header="_Sobre" Click="menuSobreClick" />
+            </MenuItem>
+        </Menu>
+        <!--botões-->
+        <Button x:Name="btnAdicionarProduto" Content="Adicionar Produto (P)" HorizontalAlignment="Center" Margin="0,400,800,0" VerticalAlignment="Center" FontSize="24" Click="btnAdicionarProdutoClick"/>
+        <Button x:Name="btnAlterarQuantidade" Content="Alterar Quantidade (Q)" HorizontalAlignment="Center" Margin="0,400,240,0" VerticalAlignment="Center" FontSize="24" Click="btnAlterarQuantidadeClick"/>
+        <Button x:Name="btnRemoverProduto" Content="Remover Produto (R)" HorizontalAlignment="Center" Margin="300,400,0,0" VerticalAlignment="Center" FontSize="24" Click="btnRemoverProdutoClick"/>
+        <Button x:Name="btnTerminarAcoes" Content="Terminar Ações (T)" HorizontalAlignment="Center" Margin="0,500,800,0" VerticalAlignment="Center" FontSize="24" Click="btnTerminarAcoesClick"/>
+        <Button x:Name="btnRealizarPagamento" Content="Realizar Pagamento (SPACE)" HorizontalAlignment="Center" Margin="0,500,240,0" VerticalAlignment="Center" FontSize="24" Click="btnRealizarPagamentoClick"/>
+        <Label x:Name="labelFuncionario" Content="Funcionário: " HorizontalAlignment="Left" Margin="85,92,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Funcionario" Content="Label" HorizontalAlignment="Left" Margin="168,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.569,-0.69"/>
+        
+        <DataGrid x:Name="dgCompraProdutos" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="164" Margin="120,232,0,0" VerticalAlignment="Top" Width="998">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding CompraProdutoId}" Header="Código do Produto" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding CodigoBarra}" Header="Código do Produto" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Produto"/>
+                <DataGridTextColumn Binding="{Binding Preco}" Header="Preço do Produto"/>
+                <DataGridTextColumn Binding="{Binding QuantidadeProduto}" Header="Quantidade"/>
+                <DataGridTextColumn Binding="{Binding ValorTotal}" Header="Preço da Quantidade Total"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Nº da Compra: " HorizontalAlignment="Left" Margin="507,143,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="valueCompra" Content="Label" HorizontalAlignment="Left" Margin="616,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,-0.269"/>
+        <TextBox x:Name="txStatus" HorizontalAlignment="Left" Height="23" Margin="0,666,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="1272"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="1026,541,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="valuePrecoTotal" Content="Label" HorizontalAlignment="Left" Margin="1118,551,0,0" VerticalAlignment="Top"/>
+
+        <!--Tabela-->
+    </Grid>
+</Window>

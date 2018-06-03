@@ -1,0 +1,25 @@
+﻿<Window x:Class="Padaria.JanelaVerComandas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Padaria"
+        mc:Ignorable="d"
+        Title="Ver Comandas - Sistema Padaria Cremosa" Height="720" Width="1280" Loaded="Window_Loaded">
+    <Grid>
+        
+        <Button x:Name="btnSair" Content="Button" HorizontalAlignment="Left" Margin="418,560,0,0" VerticalAlignment="Top" Width="75" Click="btnSairClick"/>
+
+        <DataGrid x:Name="dgVerComandas" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="164" Margin="120,232,0,0" VerticalAlignment="Top" Width="998">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding DataPagamento}" Header="Data do Pagamento"/>
+                <DataGridTextColumn Binding="{Binding ComandaId}" Header="Código Comanda" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding CompraId}" Header="nº da Compra" IsReadOnly="True"/>
+                <DataGridTextColumn Binding="{Binding ValorPago}" Header="Valor Pago"/>
+                <DataGridTextColumn Binding="{Binding ValorTroco}" Header="Troco"/>
+                <DataGridTextColumn Binding="{Binding PrecoTotal}" Header="Preço Total da Compra"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

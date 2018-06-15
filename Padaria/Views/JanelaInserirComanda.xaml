@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:Padaria.Views"
         mc:Ignorable="d"
         Title="JanelaInserirComanda" Height="450" Width="800">
-    <Grid>
-        <Label x:Name="labelLerComanda" Content="Esperando Comanda" HorizontalAlignment="Left" Margin="178,124,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnLerComanda" Content="Button" HorizontalAlignment="Left" Margin="298,276,0,0" VerticalAlignment="Top" Width="75" Click="btnLerComandaClick"/>
-        <TextBox x:Name="txComanda" HorizontalAlignment="Left" Height="23" Margin="392,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    <Grid Background="#FF3F978F">
+        <Label x:Name="labelLerComanda" Content="Esperando Comanda" HorizontalAlignment="Left" Margin="130,161,0,0" VerticalAlignment="Top" Foreground="#FFF5EEEE" FontSize="20"/>
+        <Button x:Name="btnLerComanda" Content="Inserir" HorizontalAlignment="Left" Margin="388,240,0,0" VerticalAlignment="Top" Width="75" Click="btnLerComandaClick" Cursor="Hand"/>
+        <TextBox x:Name="txComanda" HorizontalAlignment="Left" Height="23" Margin="388,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Image Margin="10,10,677,325" Source="/Padaria;component/comanda.png" Stretch="Fill" RenderTransformOrigin="0.693,0.103"/>
 
     </Grid>
 </Window>

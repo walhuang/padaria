@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:Padaria.Views"
         mc:Ignorable="d"
         Title="JanelaAlterarQuantidade" Height="450" Width="800">
-    <Grid>
-        <Label Content="Insira nova quantidade" HorizontalAlignment="Left" Margin="167,114,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txQuantidade" HorizontalAlignment="Left" Height="23" Margin="167,238,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnQuantidade" Content="Button" HorizontalAlignment="Left" Margin="349,238,0,0" VerticalAlignment="Top" Width="75" Click="btnQuantidadeClick"/>
+    <Grid Background="#FF3F978F">
+        <Label Content="Insira nova quantidade" HorizontalAlignment="Left" Margin="201,130,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FFF9F2F2"/>
+        <TextBox x:Name="txQuantidade" HorizontalAlignment="Left" Height="23" Margin="443,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnQuantidade" Content="Inserir" HorizontalAlignment="Left" Margin="443,212,0,0" VerticalAlignment="Top" Width="75" Click="btnQuantidadeClick" Cursor="Hand"/>
+        <Image Margin="85,114,628,214" Source="/Padaria;component/quantidade.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

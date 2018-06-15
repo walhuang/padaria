@@ -6,10 +6,11 @@
         xmlns:local="clr-namespace:Padaria.Views"
         mc:Ignorable="d"
         Title="JanelaRealizarPagamento" Height="450" Width="800">
-    <Grid>
-        <Label Content="Insira o valor pago" HorizontalAlignment="Left" Margin="149,201,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txValorPago" HorizontalAlignment="Left" Height="23" Margin="292,214,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnPagar" Content="Button" HorizontalAlignment="Left" Margin="312,312,0,0" VerticalAlignment="Top" Width="75" Click="btnPagarClick"/>
+    <Grid Background="#FF3F978F">
+        <Label Content="Insira o valor pago" HorizontalAlignment="Left" Margin="213,164,0,0" VerticalAlignment="Top" FontSize="20" Foreground="White" Height="47"/>
+        <TextBox x:Name="txValorPago" HorizontalAlignment="Left" Height="24" Margin="425,177,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="140"/>
+        <Button x:Name="btnPagar" Content="Pagar" HorizontalAlignment="Left" Margin="312,312,0,0" VerticalAlignment="Top" Width="75" Click="btnPagarClick" Cursor="Hand"/>
+        <Image Margin="106,150,620,208" Source="/Padaria;component/money.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

@@ -200,7 +200,30 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="atendente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="desenvolvedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="comanda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="quantidade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="produto.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -52,5 +52,15 @@ namespace Padaria
             }
             dgVerComandas.ItemsSource = listViewModel;
         }
+
+        private void dgVerComandas_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void dgVerComandas_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

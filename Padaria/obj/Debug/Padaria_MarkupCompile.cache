@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\ProBook\Desktop\padaria-csharp-master\Padaria\obj\Debug\
+C:\Users\Eduardo\Documents\IFSP\A5LP1\padaria\Padaria\obj\Debug\
 Padaria
 none
 false
 DEBUG;TRACE
-C:\Users\ProBook\Desktop\padaria-csharp-master\Padaria\App.xaml
+C:\Users\Eduardo\Documents\IFSP\A5LP1\padaria\Padaria\App.xaml
 101365079779
 
 23728054231
-161033554825
+16-488196576
 Views\JanelaAdicionarProduto.xaml;Views\JanelaAjuda.xaml;Views\JanelaAlterarQuantidade.xaml;Views\JanelaInserirComanda.xaml;Views\JanelaRemoverProduto.xaml;Views\JanelaLogin.xaml;Views\JanelaRealizarPagamento.xaml;Views\JanelaSobre.xaml;Views\JanelaVerComandas.xaml;MainWindow.xaml;
 
 False

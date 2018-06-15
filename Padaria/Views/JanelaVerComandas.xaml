@@ -6,11 +6,11 @@
         xmlns:local="clr-namespace:Padaria"
         mc:Ignorable="d"
         Title="Ver Comandas - Sistema Padaria Cremosa" Height="720" Width="1280" Loaded="Window_Loaded">
-    <Grid>
-        
-        <Button x:Name="btnSair" Content="Button" HorizontalAlignment="Left" Margin="418,560,0,0" VerticalAlignment="Top" Width="75" Click="btnSairClick"/>
+    <Grid Background="#FF3F978F">
 
-        <DataGrid x:Name="dgVerComandas" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="164" Margin="120,232,0,0" VerticalAlignment="Top" Width="998">
+        <Button x:Name="btnSair" Content="Ok" HorizontalAlignment="Left" Margin="534,530,0,0" VerticalAlignment="Top" Width="96" Click="btnSairClick" Height="37" Background="#FFE3EDF5" RenderTransformOrigin="0.115,0.351" Cursor="Hand"/>
+
+        <DataGrid x:Name="dgVerComandas" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="197" Margin="333,170,0,0" VerticalAlignment="Top" Width="812" SelectionChanged="dgVerComandas_SelectionChanged_1" Background="#FFB8C6D1">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding DataPagamento}" Header="Data do Pagamento"/>
                 <DataGridTextColumn Binding="{Binding ComandaId}" Header="Código Comanda" IsReadOnly="True"/>
@@ -20,6 +20,7 @@
                 <DataGridTextColumn Binding="{Binding PrecoTotal}" Header="Preço Total da Compra"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Image Margin="62,197,976,322" Source="/Padaria;component/comanda.png" Stretch="Fill"/>
 
     </Grid>
 </Window>

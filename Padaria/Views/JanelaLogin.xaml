@@ -6,12 +6,13 @@
         xmlns:local="clr-namespace:Padaria.Views"
         mc:Ignorable="d"
         Title="JanelaLogin" Height="450" Width="800">
-    <Grid>
-        <Label Content="labelLogin" HorizontalAlignment="Left" Margin="152,117,0,0" VerticalAlignment="Top"/>
-        <Label Content="labelSenha" HorizontalAlignment="Left" Margin="152,200,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="255,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.492,-0.609"/>
-        <TextBox x:Name="tbSenha" HorizontalAlignment="Left" Height="23" Margin="255,200,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnEntrar" Content="Button" HorizontalAlignment="Left" Margin="283,312,0,0" VerticalAlignment="Top" Width="75" Click="btnEntrarClick"/>
+    <Grid Background="#FF3F978F">
+        <Image Margin="97,86,649,265" Source="/Padaria;component/login.png" Stretch="Fill"/>
+        <Label Content="Usuário" HorizontalAlignment="Left" Margin="185,117,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FFF9F9F9"/>
+        <Label Content="Senha" HorizontalAlignment="Left" Margin="185,192,0,0" VerticalAlignment="Top" Foreground="#FFF7F0F0" FontSize="20"/>
+        <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Height="23" Margin="283,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.492,-0.609"/>
+        <PasswordBox Name="tbSenha" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Margin="283,198,0,0" Width="120"/>
+        <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="283,306,0,0" VerticalAlignment="Top" Width="75" Click="btnEntrarClick" Cursor="Hand"/>
 
     </Grid>
 </Window>

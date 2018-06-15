@@ -28,7 +28,7 @@ namespace Padaria.Views
         private void btnEntrarClick(object sender, RoutedEventArgs e)
         {
             string login = tbLogin.Text;
-            string senha = tbSenha.Text;
+            string senha = tbSenha.Password;
 
             var db = new PadariaContext();
             try

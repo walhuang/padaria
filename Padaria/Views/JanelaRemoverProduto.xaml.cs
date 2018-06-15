@@ -32,7 +32,7 @@ namespace Padaria.Views
             MainWindow main = (MainWindow)DataContext;
             int compraId = int.Parse(main.valueCompra.Content.ToString());
             string login = tbLogin.Text;
-            string senha = tbSenha.Text;
+            string senha = tbSenha.Password;
 
             CompraProdutosViewModel rowdata = (CompraProdutosViewModel)main.dgCompraProdutos.SelectedItem;
 
